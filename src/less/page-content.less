@@ -1,0 +1,175 @@
+#page-content-wrapper{
+  	width: 100%;
+}
+
+#page-content-wrapper .navbar-inverse{
+	border: 0;
+	border-bottom: 1px solid @navbar-border-color;
+}
+
+.navbar-inverse{
+
+	margin-bottom: 0;
+
+	.navbar-header{
+
+		.navbar-brand{
+			color: #000;
+			text-decoration: none;
+			font-size: 20px;
+		}
+
+		.navbar-brand:hover{
+			color: #000;
+			text-decoration: none;
+		}
+
+		.navbar-toggle{
+			margin-top: 20px;
+		}
+	}
+}
+
+#top-menu{
+	@media (min-width: 767px){
+		display: block;
+	}
+
+	@media (max-width: 767px){
+		margin: 0;
+	}
+}
+
+#top-menu > li{
+	float: left;
+	border-left: 1px solid @navbar-border-color;
+	@media (max-width: 767px){
+		border: 1px solid @navbar-border-color;
+	}
+
+	a{
+		font-size: 14px;
+		text-decoration: none;
+	}
+}
+
+#top-menu > li:hover{
+	background-color: grey;
+}
+
+#info-space{
+	@media (min-width: 767px){
+		display: block;
+	}
+
+	@media (max-width: 767px){
+		margin: 0;
+	}
+}
+
+#info-space{
+	margin-top: 10px;
+	margin-right: 35px;
+
+	.dropdown-toggle{
+		padding: 0;
+	}
+
+	li > a img{
+		width: 30px;
+	}
+}
+
+#page-content-wrapper .second-menu{
+	background-color: #fff;
+	height: @second-navbar-height;
+	border-bottom: 0;
+}
+
+#page-content-wrapper{
+	.container{
+		.row{
+			padding-top: 20px;
+
+			.column{
+				.post{
+					background-color: #fff;
+					color: #000;
+					padding: 20px;
+
+					hr{
+						margin-top: 0;
+						margin-bottom: 0;
+					}
+
+					.autor{
+						margin: 0;
+						padding: 10px;
+						padding-left: 20px;
+					}
+				}
+
+				.row{
+					margin-left: 0;
+					margin-right: 0;
+
+					.continue{
+						background-color: #708fa0;
+						height: 35px;
+						border-radius: 20px;
+
+						a{
+							display: block;
+							height: 50px;
+							text-align: center;
+							color: #fff;
+							text-decoration: none;
+						}
+
+						a > span{
+							line-height: 3;
+						}
+					}
+
+					.continue:hover{
+						background-color: #64b5e2;
+
+						a{
+							color: #fff;
+						}
+					}
+
+					.keep{
+						background-color: #819986;
+						height: 35px;
+						border-radius: 20px;
+
+						a{
+							display: block;
+							height: 50px;
+							text-align: center;
+							color: #fff;
+							text-decoration: none;
+						}
+
+						a > span{
+							line-height: 3;
+						}
+					}
+
+					.keep:hover{
+						background-color: #93d89e;
+
+						a{
+							color: #fff;
+						}
+					}
+				}
+			}
+
+			.col-sm-offset-1 {
+				margin-left: 12.333333%;
+			}
+		}
+	}
+}

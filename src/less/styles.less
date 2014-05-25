@@ -1,0 +1,51 @@
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+
+@import "page-content.less";
+@import "home-page.less";
+@import "signin.less";
+@import "registration.less";
+@import "landing.less";
+@import "newStory.less";
+
+html, body{
+	height: 100%;
+}
+
+body{
+	background-color: @body-bg;
+}
+
+#wrapper{
+	transition: all 0.4s ease 0s;
+	@media (max-width:767px){
+		padding-left: 0;
+	}
+}
+
+#wrapper.active{
+	@media (max-width:767px){
+		position: relative;
+		left: 80px;
+	}
+}
+
+#menu-toggle{
+	@media (max-width:767px){
+		display: inline !important;
+		position: absolute;
+		top: 17px;
+		left: 85px;
+	}
+}
+
+#menu-toggle{
+	display: none;
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+}
+
+#menu-toggle:hover{
+	text-decoration: none;
+}
